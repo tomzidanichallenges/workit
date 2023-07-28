@@ -10,9 +10,3 @@
 .container {
   @include container;
 }
-
-@include mq($until: desktop) {
-  body {
-    background: red;
-  }
-}
