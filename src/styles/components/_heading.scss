@@ -1,0 +1,40 @@
+/*
+ * Heading
+ */
+
+.heading {
+  @include fraunces;
+  font-weight: 500;
+
+  > b {
+    font-weight: unset;
+    @include underline(0, 7px);
+  }
+
+  &--l {
+    font-size: 80px;
+    line-height: 1;
+  }
+
+  &--m {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  &--s {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  &--w {
+    color: map-get($colors, white);
+  }
+
+  &--p {
+    color: map-get($colors, primary);
+  }
+
+  &--secondary {
+    color: map-get($colors, secondary);
+  }
+}

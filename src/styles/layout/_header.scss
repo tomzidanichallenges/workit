@@ -1,0 +1,22 @@
+/*
+ * Header
+ */
+.app-header {
+  padding: 55px 0;
+
+  background: map-get($colors, secondary);
+
+  .header {
+    &__wrapper {
+      display: flex;
+      @include container;
+
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      max-width: 95px;
+    }
+  }
+}

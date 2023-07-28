@@ -1,0 +1,25 @@
+/*
+ * Footer
+ */
+.app-footer {
+  display: flex;
+  padding: 60px 0;
+  gap: 60px;
+
+  align-items: center;
+  flex-direction: column;
+
+  .footer {
+    &__logo {
+      max-width: 95px;
+    }
+
+    &__socials {
+      display: flex;
+      gap: 30px;
+
+      align-items: center;
+      color: map-get($colors, davys-grey);
+    }
+  }
+}

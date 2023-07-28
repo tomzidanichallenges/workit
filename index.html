@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header__wrapper">
+        <img src="./assets/images/logo-light.svg" alt="Workit" class="header__logo" />
+        <a href="#apply" class="btn btn--secondary">Apply for access</a>
+      </div>
+    </header>
+
+    <!-- Home -->
+    <main class="app-home">
+      <!-- Hero section -->
+      <section class="home__hero">
+        <div class="hero__wrapper">
+          <div class="hero__inner">
+            <h1 class="heading heading--l heading--w">
+              Data <b>tailored</b> to<br />
+              your needs.
+            </h1>
+            <a href="#more" class="btn btn--primary hero__btn"><span>Learn more</span></a>
+            <img src="./assets/images/image-hero.webp" alt="Illustration of a mobile using our application" class="hero__img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits section -->
+      <section class="home__benefits" data-component="benefits">
+        <div class="benefits__wrapper">
+          <article class="benefit-card">
+            <span class="card__number">1</span>
+            <h3 class="card__title heading heading--s heading--secondary">Actionable insights</h3>
+            <p class="card__text text text--secondary">
+              Optimize your products, improve customer satisfaction and stay ahead of the competition with our product data analytics.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <span class="card__number">2</span>
+            <h3 class="card__title heading heading--s heading--secondary">Data-driven decisions</h3>
+            <p class="card__text text text--secondary">
+              Make data-driven decisions with our product data analytics. Our AI-generated reports help you unlock insights hidden in your product
+              data.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <span class="card__number">3</span>
+            <h3 class="card__title heading heading--s heading--secondary">Always affordable</h3>
+            <p class="card__text text text--secondary">
+              Always affordable pricing that scales with your business. Get top-quality product data-analytics services without hidden costs our
+              unexpected fees.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="home__betatest">
+        <div class="betatest__wrapper">
+          <div class="betatest__founder">
+            <img src="./assets/images/image-founder.webp" alt="Louis, Founder of Workit" class="betatest__image" />
+          </div>
+
+          <div class="betatest__info">
+            <h2 class="betatest__title heading heading--w heading--m">Be the first to test</h2>
+            <p class="betatest__text text text--w">
+              Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester for our app and kickstart your
+              company. Apply for access below and I'll be in touch to schedule a call.
+            </p>
+            <a href="#betatest" class="btn btn--primary"><span>Apply for access</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <img src="./assets/images/logo-dark.svg" alt="Workit" class="footer__logo" />
+      <ul class="footer__socials">
+        <li>
+          <a href="#facebook" title="Facebook">
+            <img src="./assets/images/icon-facebook.svg" alt="Workit" />
+          </a>
+        </li>
+        <li>
+          <a href="#twitter" title="Twitter">
+            <img src="./assets/images/icon-twitter.svg" alt="Workit" />
+          </a>
+        </li>
+        <li>
+          <a href="#instagram" title="Instagram">
+            <img src="./assets/images/icon-instagram.svg" alt="Workit" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

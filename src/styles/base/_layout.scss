@@ -1,0 +1,20 @@
+/*
+ * Layout
+ */
+@mixin container {
+  max-width: 1110px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container {
+  @include container;
+}
+
+@import "mq";
+
+@include mq($until: desktop) {
+  body {
+    background: red;
+  }
+}

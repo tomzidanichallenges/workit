@@ -1,0 +1,22 @@
+/*
+ * Fonts
+ */
+@font-face {
+  font-family: "Manrope";
+  src: url("../../../public/assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../../../public/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+
+@mixin manrope {
+  font-family: "Manrope";
+  font-weight: normal;
+}
+
+@mixin fraunces {
+  font-family: "Fraunces";
+  font-weight: normal;
+}

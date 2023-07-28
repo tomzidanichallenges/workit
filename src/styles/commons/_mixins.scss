@@ -1,0 +1,9 @@
+@mixin underline($pos: 3px, $margin: 0px, $size: 3px, $color: map-get($colors, primary)) {
+  padding-bottom: $pos;
+  background-image: linear-gradient($color, $color), linear-gradient($color, $color);
+  background-size: 100% $size, 0 $size;
+  background-position: 100% calc(100% - $margin), 0 100%;
+  background-repeat: no-repeat;
+
+  transition: background-size 2s linear;
+}

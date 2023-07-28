@@ -1,0 +1,42 @@
+/*
+ * Benefit card
+ */
+.benefit-card {
+  text-align: center;
+  // opacity: 0;
+  // transform: translateY(-100px);
+
+  // &.revealed {
+  //   opacity: 1;
+
+  //   transform: translateY(0);
+
+  //   transition: cubic-bezier(0.76, 0, 0.24, 1) 0.5s;
+
+  //   @for $i from 1 through 3 {
+  //     &:nth-child(3n + #{$i}) {
+  //       transition-delay: $i * 0.2s;
+  //     }
+  //   }
+  // }
+
+  .card {
+    &__number {
+      display: grid;
+      width: 55px;
+      height: 55px;
+      margin: 0 auto 55px auto;
+
+      @include fraunces;
+      font-size: 24px;
+      color: map-get($colors, secondary);
+      place-content: center;
+      border-radius: 50%;
+      border: solid 1px map-get($colors, secondary);
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+}

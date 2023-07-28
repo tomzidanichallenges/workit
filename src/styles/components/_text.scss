@@ -1,0 +1,15 @@
+/*
+ * Text
+ */
+.text {
+  font-size: 18px;
+  line-height: 32px;
+
+  &--w {
+    color: map-get($colors, white);
+  }
+
+  &--secondary {
+    color: map-get($colors, secondary);
+  }
+}

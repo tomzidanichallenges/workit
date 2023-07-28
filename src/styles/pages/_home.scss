@@ -1,0 +1,108 @@
+/*
+ * Home
+ */
+.app-home {
+  .home {
+    // Hero section
+    &__hero {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='730' viewBox='0 0 1440 730' fill='none'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0H1440V662C1440 662 1082.96 730 722 730C361.039 730 0 662 0 662V0Z' fill='%2324053E'/%3e%3c/svg%3e");
+      background-color: #fcf8ff;
+      background-position: center calc(100% - 165px);
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      .hero {
+        &__wrapper {
+          padding-top: 30px;
+          overflow: visible;
+          background: url("./assets/images/bg-pattern-1.svg") -140px 0 no-repeat,
+            url("./assets/images/bg-pattern-2.svg") calc(100% + 50px) 35% no-repeat;
+        }
+
+        &__inner {
+          @include container;
+          text-align: center;
+        }
+
+        &__btn {
+          margin-top: 35px;
+          margin-bottom: 50px;
+        }
+
+        &__img {
+          display: block;
+          margin: 0 auto;
+          max-width: 765px;
+        }
+      }
+    }
+
+    &__benefits {
+      padding: 90px 0 170px 0;
+
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='960' viewBox='0 0 1440 960' fill='none'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0H1440V892C1440 892 1082.96 960 722 960C361.039 960 0 892 0 892V0Z' fill='%23FCF8FF'/%3e%3c/svg%3e");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .benefits {
+        &__wrapper {
+          display: flex;
+          @include container;
+          gap: 25px;
+
+          align-items: stretch;
+        }
+      }
+    }
+
+    &__betatest {
+      padding: 280px 0 60px 0;
+
+      .betatest {
+        &__wrapper {
+          display: flex;
+          position: relative;
+          @include container;
+        }
+
+        &__founder {
+          position: absolute;
+
+          transform: translateY(-32.5%);
+          z-index: -1;
+        }
+
+        &__image {
+          max-width: 475px;
+        }
+
+        &__info {
+          max-width: calc(730px - 64px * 2);
+          position: relative;
+          margin-left: auto;
+          padding: 64px;
+
+          background: map-get($colors, secondary);
+
+          &::after {
+            position: absolute;
+            content: "";
+            width: 220px;
+            height: 200px;
+            right: 80px;
+            bottom: -60px;
+
+            background: url("./assets/images/bg-pattern-3.svg") center center no-repeat;
+            background-size: contain;
+          }
+        }
+
+        &__title,
+        &__text {
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+}
