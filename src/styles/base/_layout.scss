@@ -11,8 +11,6 @@
   @include container;
 }
 
-@import "mq";
-
 @include mq($until: desktop) {
   body {
     background: red;
